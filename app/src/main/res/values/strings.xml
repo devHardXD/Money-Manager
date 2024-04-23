@@ -6,4 +6,13 @@
     <string name="total">Total :</string>
     <string name="totalduit">Rp. 900.000</string>
     <string name="totalpendapatan">Rp. 1.000.000</string>
+    <string name="wallet">Wallet</string>
+    <string name="aset_bersih">Aset Bersih</string>
+    <string name="rp_760_000">Rp 760.000</string>
+    <string name="pemasukkan">Pemasukkan</string>
+    <string name="rp_1_000_000">Rp 1.000.000</string>
+    <string name="pengeluaran">Pengeluaran</string>
+    <string name="rp_240_000">Rp 240.000</string>
+    <string name="card">card</string>
+    <string name="card1">Card</string>
 </resources>

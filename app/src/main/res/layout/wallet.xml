@@ -1,7 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/walletmain"
-    xmlns:app="http://schemas.android.com/apk/res-auto"/>
+    android:background="@color/secondary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/purplecloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purplecloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="200dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/cardrightbottomroundcorner">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttontransparent"
+            android:src="@drawable/back"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="340dp"
+            android:background="@drawable/buttontransparent"
+            android:src="@drawable/show"
+            />
+        <TextView
+            android:id="@+id/wallet1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="57dp"
+            android:text="@string/wallet"
+            android:fontFamily="@font/regular"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/tanggal"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/regular"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/aset"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/aset_bersih"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/duit"
+            android:text="@string/rp_760_000"
+            android:textSize="30sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="150dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/pemasukkan"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/cardrightbottomroundcorner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/pemasukkan"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+
+            />
+        <View
+            android:layout_width="330dp"
+            android:layout_height="4dp"
+            android:background="@color/white"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/rp_1_000_000"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="15dp"
+            android:textSize="26sp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/white"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/pengeluaran"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/cardrightbottomroundcorner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/pengeluaran"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+
+            />
+        <View
+            android:layout_width="330dp"
+            android:layout_height="4dp"
+            android:background="@color/white"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/rp_240_000"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="15dp"
+            android:textSize="26sp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/white"
+            />
+
+    </FrameLayout>
+
+</FrameLayout>

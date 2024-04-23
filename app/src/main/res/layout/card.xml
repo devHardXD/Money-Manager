@@ -10,16 +10,33 @@
     <FrameLayout
         android:id="@+id/navbarCard"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="180dp"
         android:background="@drawable/backgroundprimary"
         app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttontransparent"
+            android:src="@drawable/back"
+            />
+        <TextView
+            android:id="@+id/wallet1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="57dp"
+            android:text="@string/card1"
+            android:fontFamily="@font/regular"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="520dp"
-        android:layout_height="818dp"
+        android:layout_height="788dp"
         android:background="@drawable/roundsecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -29,9 +46,8 @@
             android:layout_width="350dp"
             android:layout_height="250dp"
             android:layout_marginStart="130dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_editor_absoluteX="0dp"
-            app:layout_editor_absoluteY="125dp"
             app:srcCompat="@drawable/creditcard" />
     </FrameLayout>
 
