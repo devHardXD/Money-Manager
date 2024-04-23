@@ -7,27 +7,39 @@
     android:id="@+id/loadingpage">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/seam1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/seam"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seam" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/seam2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/seam"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="441dp" />
+        android:layout_marginTop="441dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seam1"
+        app:srcCompat="@drawable/seam" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/logo"
         android:layout_width="365dp"
         android:layout_height="161dp"
         app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="285dp" />
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/seam3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="441dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seam2"
+        app:srcCompat="@drawable/seam" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
