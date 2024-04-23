@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/navbarCard"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/backgroundprimary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="520dp"
+        android:layout_height="818dp"
+        android:background="@drawable/roundsecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="130dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="125dp"
+            app:srcCompat="@drawable/creditCard" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/purplecloud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navbarCard"
+        app:layout_editor_absoluteX="-200dp"
+        app:layout_editor_absoluteY="200dp"
+        app:srcCompat="@drawable/purplecloud" />
+
+    <ImageView
+        android:id="@+id/purplecloud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purplecloud1"
+        app:layout_editor_absoluteY="700dp"
+        app:srcCompat="@drawable/purplecloud" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
