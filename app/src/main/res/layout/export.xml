@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardmain"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/navbarCard"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/backgroundprimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backbuttonexport"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttontransparent"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/export1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="57dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/export"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="788dp"
+        android:background="@drawable/cardrightupperroundcorner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navbarCard">
+
+        <ImageView
+            android:id="@+id/purplecloud1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-200dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navbarCard"
+            app:layout_editor_absoluteX="-200dp"
+            app:layout_editor_absoluteY="200dp"
+            app:srcCompat="@drawable/purplecloud" />
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/cardrightbottomroundcorner"
+            android:src="@drawable/excel" />
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/cardrightbottomroundcorner"
+            android:src="@drawable/powerpt"
+
+            />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/regular"
+                android:text="@string/tanggal1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/buttontransparent"
+                android:rotation="270"
+                android:src="@drawable/back1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/regular"
+                android:text="@string/all" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/buttontransparent"
+                android:rotation="270"
+                android:src="@drawable/back1" />
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="515dp"
+            android:text="@string/export1" />
+
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:id="@+id/purplecloud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="700dp"
+        app:srcCompat="@drawable/purplecloud" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

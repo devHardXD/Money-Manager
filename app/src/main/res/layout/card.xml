@@ -12,40 +12,44 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:background="@drawable/backgroundprimary"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-160dp">
+
         <ImageButton
+            android:id="@+id/backbuttoncard"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/buttontransparent"
-            android:src="@drawable/back"
-            />
+            android:src="@drawable/back" />
+
         <TextView
             android:id="@+id/wallet1"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="57dp"
-            android:text="@string/card1"
             android:fontFamily="@font/regular"
-            android:textSize="24sp"
-            android:textColor="@color/white" />
+            android:text="@string/card1"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="520dp"
+        android:layout_width="match_parent"
         android:layout_height="788dp"
-        android:background="@drawable/roundsecondary"
+        android:background="@drawable/cardrightupperroundcorner"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navbarCard">
 
         <ImageView
             android:id="@+id/card"
             android:layout_width="350dp"
             android:layout_height="250dp"
-            android:layout_marginStart="130dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/creditcard" />

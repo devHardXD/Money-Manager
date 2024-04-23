@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardmain"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/purplecloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purplecloud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="200dp"
+        tools:ignore="UnknownIdInLayout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/cardrightbottomroundcorner"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/backbuttonanalyst"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttontransparent"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/analis1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="57dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/analyst"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/oleh_kategori"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="265dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/buttontransparent"
+                android:rotation="270"
+                android:src="@drawable/back1" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="300dp"
+        android:id="@+id/pieChart"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+
+</FrameLayout>

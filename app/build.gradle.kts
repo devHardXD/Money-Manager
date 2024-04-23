@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
+
 android {
     namespace = "com.example.moneymanager"
     compileSdk = 34
@@ -46,4 +47,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.google.android.material:material:1.13.0-alpha01")
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

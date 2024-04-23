@@ -31,6 +31,7 @@
         android:background="@drawable/cardrightbottomroundcorner">
 
         <ImageButton
+            android:id="@+id/backbuttonwallet"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
@@ -79,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:id="@+id/duit"
-            android:text="@string/rp_760_000"
+            android:text="@string/totaluang"
             android:textSize="30sp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="150dp"
@@ -115,7 +116,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:text="@string/rp_1_000_000"
+            android:text="@string/totalpemasukan"
             android:layout_marginTop="45dp"
             android:layout_marginStart="15dp"
             android:textSize="26sp"
@@ -151,7 +152,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:text="@string/rp_240_000"
+            android:text="@string/totalpengeluaran"
             android:layout_marginTop="45dp"
             android:layout_marginStart="15dp"
             android:textSize="26sp"
