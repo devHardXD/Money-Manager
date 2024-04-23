@@ -2,4 +2,8 @@
     <string name="app_name">Money Manager</string>
     <string name="riwayat">RIWAYAT</string>
     <string name="money_manager">Money Manager</string>
+    <string name="tanggal">04 / 2024</string>
+    <string name="total">Total :</string>
+    <string name="totalduit">Rp. 900.000</string>
+    <string name="totalpendapatan">Rp. 1.000.000</string>
 </resources>
